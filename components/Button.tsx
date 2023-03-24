@@ -1,9 +1,10 @@
+import React from 'react';
 import { StyleSheet, View, Pressable, Text } from 'react-native';
 
 export default function Button({ label }) {
   return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={() => alert('You pressed a button.')}>
+      <Pressable style={styles.button} onPress={() => alert('botao ta ai')}>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
@@ -13,6 +14,8 @@ export default function Button({ label }) {
 const styles = StyleSheet.create({
   buttonContainer: {
     width: 320,
+    backgroundColor: "",
+    color: "",
     height: 68,
     marginHorizontal: 20,
     alignItems: 'center',
@@ -21,6 +24,7 @@ const styles = StyleSheet.create({
   },
   button: {
     borderRadius: 10,
+    
     width: '100%',
     height: '100%',
     alignItems: 'center',
@@ -31,7 +35,8 @@ const styles = StyleSheet.create({
     paddingRight: 8,
   },
   buttonLabel: {
-    color: '#fff',
+    color: '#000000',
     fontSize: 16,
+    
   },
 });

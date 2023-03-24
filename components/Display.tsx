@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text } from "react-native/types";
+import { View, Text } from "react-native";
 
 
  export default function Display(){
@@ -7,7 +7,7 @@ import { View, Text } from "react-native/types";
 
         <View>
             <Text>ola mundo</Text>
-        </View>
+        </View>)
     
 }
 
